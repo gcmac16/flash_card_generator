@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/nu2g7/Jr59M8ytNmRysVVudxD92I16g+Z8jnzD" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+
+    <title>StudyBuddy</title>
+
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      }
+
+      .navbar {
+        background-color: #5850EC;
+      }
+
+      .jumbotron {
+        background-color: #5850EC;
+        color: white;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+      }
+
+      .jumbotron h1 {
+        font-size: 3rem;
+        font-weight: bold;
+      }
+
+      .jumbotron p {
+        font-size: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">StudyBuddy</a>
+      </div>
+    </nav>
+
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1>StudyBuddy</h1>
+        <p class="lead">Making custom notecard generation super easy!</p>
+        <a href="{{ url_for('create_flashcards') }}" class="btn btn-lg btn-outline-light">Get Started</a>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-xs1lxBFuh87HUDM-Hhe/7X8V/un2jB5DfM4/4z5XCd4Cz8Vf19Rj9rG7R1yjWzj3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-GLhlTQ8iVG93xBfaztv0UpZe7Ze9yMtMf3Hm+0fq2z2di0/KmQrMp83qdWnUdo+O" crossorigin="anonymous"></script>
+  </body>
+</html>
